@@ -1,0 +1,142 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos do header */
+header {
+    background-color: #202020;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 250px;
+}
+
+.search-button {
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-button:hover {
+    background-color: #e67e22;
+}
+
+/* Caixa de texto centralizada */
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 0 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+h1, h2 {
+    font-size: 50px;
+    margin: 20px 0;
+    color: #333;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+a {
+    color: #ff7f50;
+    text-decoration: none;
+    font-size: 40px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e67e22;
+}
+
+h4 {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Animação no botão "CLIQUE AQUI" */
+a h1 {
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff7f50;
+    padding: 20px 40px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a h1:hover {
+    background-color: #e67e22;
+    transform: scale(1.1);
+}
+
+/* Animação de fade-in para o conteúdo */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos do footer */
+footer {
+    background-color: #202020;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+}

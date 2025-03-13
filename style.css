@@ -1,0 +1,339 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #202020;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 250px;
+}
+
+.search-button {
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-button:hover {
+    background-color: #e67e22;
+}
+
+.categories {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.categories a {
+    font-size: 20px;
+    color: #ff7f50;
+    padding: 10px;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.categories a:hover {
+    color: #e67e22;
+}
+
+.titulo {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.titulo h1 {
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s ease-out;
+}
+
+/* Quando o produto é mostrado */
+.product.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Mover para a posição original */
+}
+
+.product-img img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 16px;
+}
+
+
+
+.add-to-cart {
+    background-color: #ff7f50;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.add-to-cart:hover {
+    background-color: #e67e22;
+}
+
+footer {
+    background-color: #202020;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        width: 200px;
+    }
+
+    .titulo h1 {
+        font-size: 28px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .product-name {
+        font-size: 16px;
+    }
+
+    .product-price {
+        font-size: 14px;
+    }
+
+    .add-to-cart {
+        font-size: 14px;
+    }
+}
+
+
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Contêiner principal do banner */
+.mrpno-nrreap {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Carrossel de slides */
+.mrpno-eapnr {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+/* Cada slide */
+.mrpno-slied {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Estilo das imagens do banner */
+.mrpno-slied img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilo do texto sobre as imagens */
+.mrpno-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Certificando que o texto está centralizado */
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 100%;  /* Garante que o texto ocupe toda a largura da imagem */
+}
+
+/* Estilo das setas de navegação */
+.vpen-tnp, .vpec-nptx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 35px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.vpen-tnp {
+    left: 15px;
+}
+
+.vpec-nptx {
+    right: 15px;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 768px) {
+    .mrpno-nrreap {
+        height: 300px; /* Diminuindo altura do banner em telas pequenas */
+    }
+
+    .mrpno-text {
+        font-size: 30px; /* Reduzindo o tamanho da fonte */
+    }
+}
+
+
+
+/* Estilo para o botão */
+.butaozin {
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: #ff7f50;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 127, 80, 0.6); /* Sombra para dar destaque */
+    border: none;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Efeito de hover no botão */
+.butaozin:hover {
+    background-color: #e67e22;
+    transform: translateY(-5px); /* Efeito de elevação */
+    box-shadow: 0 10px 30px rgba(255, 127, 80, 0.8); /* Sombra mais forte */
+}
+
+/* Efeito de foco (quando o botão é clicado ou recebe foco do teclado) */
+.butaozin:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    transform: scale(1.1); /* Efeito de aumento */
+    box-shadow: 0 4px 15px rgba(255, 127, 80, 0.9); /* Sombra mais intensa */
+}
+
+/* Animação do botão na carga da página */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.butaozin {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Estilo do contêiner do logo */
+.logo2 {
+    font-weight: 800;
+    padding: 10px;
+    font-size: larger;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
