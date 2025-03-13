@@ -476,3 +476,61 @@ body {
     justify-content: center;
 }
 
+/* Ajustes para telas pequenas (celulares) */
+@media (max-width: 768px) {
+    .search-bar {
+        width: 200px;
+    }
+
+    .titulo h1 {
+        font-size: 28px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .product-name {
+        font-size: 16px;
+    }
+
+    .product-price {
+        font-size: 14px;
+    }
+
+    .add-to-cart {
+        font-size: 14px;
+    }
+
+    /* Ajuste do padding e tamanho da logo na header */
+    header {
+        padding: 10px; /* Reduzido o padding */
+    }
+
+    .logo {
+        font-size: 16px; /* Diminui ainda mais o tamanho da logo */
+    }
+
+    /* Reduzindo o tamanho da fonte no botão de pesquisa */
+    .search-bar {
+        font-size: 14px; /* Diminui o tamanho da fonte na barra de pesquisa */
+    }
+
+    /* Ajuste do tamanho do botão de pesquisa */
+    .search-button {
+        padding: 8px 12px; /* Diminui o padding do botão de pesquisa */
+        font-size: 14px; /* Diminui o tamanho da fonte no botão */
+    }
+
+    /* Ajustando o tamanho das setas de navegação do banner */
+    .vpen-tnp, .vpec-nptx {
+        font-size: 25px; /* Menor tamanho de fonte para as setas de navegação */
+    }
+
+    /* Ajuste do tamanho do texto no banner */
+    .mrpno-text {
+        font-size: 22px; /* Reduzido para se adequar melhor a telas pequenas */
+    }
+}
+
+
